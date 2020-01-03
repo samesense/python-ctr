@@ -25,7 +25,7 @@ def read(*names, **kwargs):
 
 setup(
     name='ctr',
-    version='0.0.0',
+    version='0.0.1',
     license='MIT',
     description='Concatenate files w/ headers.',
     long_description='%s\n%s' % (
