@@ -16,11 +16,12 @@ Why does this file exist, and why not put this in __main__?
 """
 import argparse
 
-parser = argparse.ArgumentParser(description='Command description.')
-parser.add_argument('names', metavar='NAME', nargs=argparse.ZERO_OR_MORE,
-                    help="A name of something.")
+parser = argparse.ArgumentParser(description='Concatenate headered files into output file (first file).')
+parser.add_argument('outfile', help='Output file.')
+parser.add_argument('infiles', nargs=argparse.REMAINDER,
+                    help="Headered files to concat.")
 
 
 def main(args=None):
     args = parser.parse_args(args=args)
-    print(args.names)
+    concat(args.outfile, args.infiles)
