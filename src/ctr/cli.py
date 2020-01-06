@@ -18,7 +18,7 @@ import argparse
 import ctr
 
 parser = argparse.ArgumentParser(description='Concatenate headered files into output file (first file).')
-parser.add_argument('outfile', help='Output file.')
+parser.add_argument('outfile', type=str, help='Output file.')
 parser.add_argument('infiles', nargs=argparse.REMAINDER,
                     help="Headered files to concat.")
 
