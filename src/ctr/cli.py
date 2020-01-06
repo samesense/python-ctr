@@ -15,6 +15,7 @@ Why does this file exist, and why not put this in __main__?
   Also see (1) from http://click.pocoo.org/5/setuptools/#setuptools-integration
 """
 import argparse
+import ctr
 
 parser = argparse.ArgumentParser(description='Concatenate headered files into output file (first file).')
 parser.add_argument('outfile', help='Output file.')
@@ -24,4 +25,4 @@ parser.add_argument('infiles', nargs=argparse.REMAINDER,
 
 def main(args=None):
     args = parser.parse_args(args=args)
-    concat(args.outfile, args.infiles)
+    ctr.concat(args.outfile, args.infiles)
