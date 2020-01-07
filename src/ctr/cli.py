@@ -24,5 +24,7 @@ parser.add_argument('infiles', nargs=argparse.REMAINDER,
 
 
 def main(args=None):
+    print(args.outfile)
+    print(args.infiles)
     args = parser.parse_args(args=args)
     ctr.concat(args.outfile, args.infiles)
