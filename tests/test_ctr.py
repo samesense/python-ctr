@@ -22,11 +22,11 @@ def test_main():
         main(sys.argv)
 
         with open("outfile") as f:
-            line = f.readline()
+            line = f.readline().strip()
             assert line == "h1\th2"
-            line = f.readline()
+            line = f.readline().strip()
             assert line == "1\t2"
-            line = f.readline()
+            line = f.readline().strip()
             assert line == "3\t4"
 
     for af in testargs:
