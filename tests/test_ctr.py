@@ -29,5 +29,5 @@ def test_main():
             line = f.readline()
             assert line == "3\t4"
 
-    for af in ls:
+    for af in testargs:
         os.system("rm " + af)
