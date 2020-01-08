@@ -1,4 +1,5 @@
-import sys, os
+import sys
+import os
 from ctr.cli import main
 from unittest.mock import patch
 
