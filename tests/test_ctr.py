@@ -1,7 +1,8 @@
-import sys
 import os
-from ctr.cli import main
+import sys
 from unittest.mock import patch
+
+from ctr.cli import main
 
 
 def test_main():
