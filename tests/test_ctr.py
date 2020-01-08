@@ -15,7 +15,7 @@ def test_main():
         print("h1\th2", file=fout)
         print("3\t4", file=fout)
 
-    testargs = ["ctr", os.path.join(pwd, "outfile"),
+    testargs = [os.path.join(pwd, "outfile"),
                 os.path.join(pwd, "in1"),
                 os.path.join(pwd, "in2")]
     with patch.object(sys, "argv", testargs):
@@ -29,8 +29,5 @@ def test_main():
             line = f.readline()
             assert line == "3\t4"
 
-    ls = [os.path.join(pwd, "outfile"),
-          os.path.join(pwd, "in1"),
-          os.path.join(pwd, "in2")]
     for af in ls:
         os.system("rm " + af)
