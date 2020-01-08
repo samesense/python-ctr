@@ -6,6 +6,7 @@ from ctr.cli import main
 
 
 def test_main():
+    pwd = os.getcwd()
     with open("in1", "w") as fout:
         print("h1\th2", file=fout)
         print("1\t2", file=fout)
@@ -14,7 +15,9 @@ def test_main():
         print("h1\th2", file=fout)
         print("3\t4", file=fout)
 
-    testargs = ["ctr", "outfile", "in1", "in2"]
+    testargs = ["ctr", os.path.join(pwd, "outfile"),
+                os.path.join(pwd, "in1"),
+                os.path.join(pwd, "in2")]
     with patch.object(sys, "argv", testargs):
         main(sys.argv)
 
@@ -25,4 +28,9 @@ def test_main():
             assert line == "1\t2"
             line = f.readline()
             assert line == "3\t4"
-    os.system("rm in1 in2")
+
+    ls = [os.path.join(pwd, "outfile"),
+          os.path.join(pwd, "in1"),
+          os.path.join(pwd, "in2")]
+    for af in ls:
+        os.system("rm " + af)
