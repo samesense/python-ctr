@@ -51,9 +51,9 @@ Overview
     :alt: Supported implementations
     :target: https://pypi.org/project/ctr
 
-.. |commits-since| image:: https://img.shields.io/github/commits-since/samesense/python-ctr/v0.0.10.svg
+.. |commits-since| image:: https://img.shields.io/github/commits-since/samesense/python-ctr/v0.0.11.svg
     :alt: Commits since latest release
-    :target: https://github.com/samesense/python-ctr/compare/v0.0.10...master
+    :target: https://github.com/samesense/python-ctr/compare/v0.0.11...master
 
 
 
