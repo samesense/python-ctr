@@ -20,7 +20,7 @@ project = 'ctr'
 year = '2019-2020'
 author = 'Perry Evans'
 copyright = '{0}, {1}'.format(year, author)
-version = release = '0.0.11'
+version = release = '0.0.12'
 
 pygments_style = 'trac'
 templates_path = ['.']
