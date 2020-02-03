@@ -48,7 +48,6 @@ setup(
         'Operating System :: Unix',
         'Operating System :: POSIX',
         'Operating System :: Microsoft :: Windows',
-        'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
@@ -68,7 +67,7 @@ setup(
     keywords=[
         # eg: 'keyword1', 'keyword2', 'keyword3',
     ],
-    python_requires='>=3.4, !=3.8.*',
+    python_requires='>=3.6, !=3.8.*',
     install_requires=[
         'snakemake==5.9.1'
     ],
