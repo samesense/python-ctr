@@ -14,7 +14,6 @@ Overview
         | |codecov|
     * - package
       - | |version| |wheel| |supported-versions| |supported-implementations|
-        | |commits-since|
 .. |docs| image:: https://readthedocs.org/projects/python-ctr/badge/?style=flat
     :target: https://readthedocs.org/projects/python-ctr
     :alt: Documentation Status
@@ -50,12 +49,6 @@ Overview
 .. |supported-implementations| image:: https://img.shields.io/pypi/implementation/ctr.svg
     :alt: Supported implementations
     :target: https://pypi.org/project/ctr
-
-.. |commits-since| image:: https://img.shields.io/github/commits-since/samesense/python-ctr/v0.0.12.svg
-    :alt: Commits since latest release
-    :target: https://github.com/samesense/python-ctr/compare/v0.0.12...master
-
-
 
 .. end-badges
 
